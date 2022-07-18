@@ -1,0 +1,149 @@
+:root {
+    --fs-1: 0.7rem;
+    --fs-2: 1rem;
+    --fs-3: 2rem;
+    --fs-4: 1.75rem;
+    --fs-5: 0.8rem;
+
+    --fw-1: 500;
+    --fw-2: 700;
+
+    --ff-1: 'Montserrat', sans-serif;
+    --ff-2: 'Fraunces', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%)
+}
+
+.card {
+    display: flex;
+    min-width: 600px;
+    width: 30%;
+    background-color: white;
+    border-radius: 0 0.6rem 0.6rem 0;
+}
+
+.image {
+    width: 50%;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.6rem 0 0 0.6rem;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.perfume {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    /* margin-top: var(--fs-3); */
+    font-size: var(--fs-5);
+    font-family: var(--ff-1);
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.name {
+    font-size: var(--fs-3);
+    font-family: var(--ff-2);
+    opacity: 0.8;
+}
+
+.para {
+    font-size: var(--fs-2);
+    font-family: var(--ff-1);
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.price {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    color: grey;
+}
+
+.newprice {
+    font-size: var(--fs-3);
+    font-family: var(--ff-2);
+    font-weight: var(--fw-2);
+    color: hsl(158, 36%, 37%);
+    opacity: 1;
+}
+
+.oldprice {
+    display: inline;
+    text-decoration: line-through;
+    font-size: var(--fs-5);
+    font-family: var(--ff-1);
+    color: grey;
+}
+
+.btn {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-size: var(--fs-2);
+    font-family: var(--ff-1);
+    font-weight: var(--fw-1);
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: var(--fs-1);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;   
+}
+
+ @media only screen and (max-width: 768px)
+{
+   .card {
+    display: flex;
+    flex-direction: column;
+    min-width: auto;
+    width: 80%;
+    border-radius: 0 0 0.6rem 0.6rem;
+   }
+
+   .image {
+    background-image: url(./images/image-product-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.6rem 0.6rem 0 0;
+    height: 22rem;
+    width: 100%;
+   }
+
+   .text {
+    width: 100%;
+    row-gap: 1rem;
+    padding: 1rem;
+   }
+
+   .price {
+    gap: 2rem;
+   }
+} 
