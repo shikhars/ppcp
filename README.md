@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/shikhars/shikhars.github.io
-- Live Site URL: https://shikhars.github.io/
+- Solution URL: https://github.com/shikhars/product-preview-card
+- Live Site URL: https://shikhars.github.io/product-preview-card/
 
 ## My process
 
